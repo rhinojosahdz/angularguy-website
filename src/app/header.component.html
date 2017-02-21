@@ -1,9 +1,6 @@
 <section id="bob-header">
     <header>
-        <a class="bob-uppercase bob-tab-header" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">home</a>
-        <a class="bob-uppercase bob-tab-header" routerLink="/resume" routerLinkActive="active">resume</a>
-        <a class="bob-uppercase bob-tab-header" routerLink="/technologies" routerLinkActive="active">technologies</a>
-        <a class="bob-uppercase bob-tab-header" routerLink="/contact" routerLinkActive="active">contact</a>
+        <a *ngFor="let tab of modelService.CONSTS.tabs" class="bob-uppercase bob-tab-header" [routerLink]="tab.routerLink" routerLinkActive="active" [routerLinkActiveOptions]="tab.routerLinkActiveOptions">{{tab.name}}</a>
         <bob-hamburger-button></bob-hamburger-button>
     </header>
 </section>

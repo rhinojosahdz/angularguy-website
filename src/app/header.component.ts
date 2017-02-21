@@ -8,7 +8,7 @@ import { ModelService } from './model.service';
 })
 export class HeaderComponent {
     constructor(
-        modelService: ModelService,
+        public modelService: ModelService,
     ) {
     }
 }
