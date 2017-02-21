@@ -1,0 +1,35 @@
+/**
+ * To make this work in VS Code we need to do this: 
+ * 1) Install TypeScript and TsLint globally: npm install -g tslint typescript
+ * 2) Install the TsLint VS Code Extension and restart the IDE
+ * You should now be able to see inline hints
+ **/
+{
+    "extends": "tslint:recommended",
+    "rules": {
+        "quotemark": [
+            false
+        ]
+        // "no-string-literal": false,
+        // "object-literal-sort-keys": false,
+        // "whitespace": [
+        //     false
+        // ],
+        // "switch-default": false,
+        // "no-unused-variable": [
+        //     true,
+        //     {
+        //         "ignore-pattern": "ngOn.*" // doesn't work :/
+        //     }
+        // ],
+        // "member-ordering": [
+        //     false
+        // ],
+        // "max-line-length": [
+        //     false
+        // ],
+        // "no-empty": false,
+        // "no-unused-expression": false,
+        // "no-shadowed-variable": false
+    }
+}
