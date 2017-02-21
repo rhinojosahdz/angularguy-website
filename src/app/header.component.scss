@@ -1,1 +1,43 @@
 @import "consts";
+#bob-header {
+    padding: 20px;
+}
+
+.bob- {
+    &tab-header {
+        // color: $fontColor;
+        padding: 10px;
+        border: 1px solid $fontColor;
+        color: $fontColor;
+        text-decoration: none;
+        &.active {
+            color: $bodyBackgroundColor;
+            background-color: $fontColor;
+        }
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+// less than $$headerSwapButtons
+@media only screen and (max-width: $headerSwapButtons) {
+    header {
+        .bob- {
+            &tab-header {
+                display: none;
+            }
+        }
+        justify-content: flex-end;
+    }
+}
+
+// greater than $$headerSwapButtons
+@media only screen and (min-width: $headerSwapButtons+1) {
+    bob-hamburger-button {
+        display: none;
+    }
+}

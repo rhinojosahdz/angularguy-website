@@ -1,0 +1,18 @@
+@import "consts";
+#bob-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bob- {
+    &first-title {
+        width: 300px;
+    }
+
+    &second-title {
+        width: 200px;
+    }
+}

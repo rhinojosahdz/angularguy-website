@@ -1,0 +1,14 @@
+@import "consts";
+#bob-hamburger-button {
+    // color: $fontColor;
+    display: inline-block;
+}
+
+.bob- {
+    &line {
+        width: 35px;
+        height: 5px;
+        background-color: $fontColor;
+        margin: 6px 0;
+    }
+}
