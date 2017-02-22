@@ -8,10 +8,8 @@ import { ModelService } from './model.service';
     templateUrl: 'app.component.html',
 })
 export class AppComponent {
-    public x: string;
     constructor(
         public modelService: ModelService,
     ) {
-        this.x = 'hello';
     }
 }

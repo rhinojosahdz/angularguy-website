@@ -2,9 +2,6 @@
 body {
     background-color: $bodyBackgroundColor;
     color: $fontColor;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
 }
 
 *,
@@ -29,7 +26,6 @@ body {
         text-transform: capitalize;
     }
     &tab-header {
-        // color: $fontColor;
         padding: 10px;
         border: 1px solid $fontColor;
         color: $fontColor;
