@@ -1,0 +1,23 @@
+@import "consts";
+#bob-side-header {
+    @include prefix((transition: all .3s ease), webkit moz ms);    
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: gray;
+    width: $sideHeaderWidth;
+    &.bob- {
+        &hide {
+            left: -$sideHeaderWidth;
+            color: blue;
+        }
+    }
+}
+
+.bob- {
+    &tab-header {
+        text-align: center;
+    }
+}

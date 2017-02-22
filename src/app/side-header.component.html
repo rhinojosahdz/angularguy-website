@@ -1,0 +1,4 @@
+<div id="bob-side-header" [ngClass]="{'bob-hide' : !modelService.sideHeaderVisible}">
+    <a (click)="modelService.sideHeaderVisible = !modelService.sideHeaderVisible" *ngFor="let tab of modelService.CONSTS.tabs"
+        class="bob-uppercase bob-tab-header" [routerLink]="tab.routerLink" routerLinkActive="active" [routerLinkActiveOptions]="tab.routerLinkActiveOptions">{{tab.name}}</a>
+</div>
