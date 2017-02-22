@@ -11,4 +11,10 @@ export class ProjectsComponent {
         public modelService: ModelService,
     ) {
     }
+
+    public playVideo($event: any) {
+        // for better support in older browsers
+        let t = $event.target || $event.srcElement;
+        t.play && t.play();
+    }
 }
