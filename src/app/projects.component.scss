@@ -9,7 +9,11 @@
 
 .bob- {
     &project {
-        width: $projectSize;
+        .bob-video,
+        .bob-img-fail {
+            display: block;
+            width: $projectSize;
+        }
         // height: $projectSize;
         .bob-name {
             margin-top: 25px;
