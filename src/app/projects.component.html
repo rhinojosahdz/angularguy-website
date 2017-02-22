@@ -3,8 +3,9 @@
         <div class="bob-name">{{project.name}}</div>
         <a [href]="project.url" class="bob-url" target="_blank">{{project.url}}</a>
         <video autoplay="autoplay" loop="loop"> <!-- [width]="modelService.CONSTS.video.width" [height]="modelService.CONSTS.video.height" -->
-            <source [src]="'assets/' + project.video" type="video/mp4" />
-            <!--<img src="video.gif" width="400" height="300" />-->
+            <source [src]="'assets/' + project.id + '.m4v'"><!-- type="video/mp4"  -->
+            <source [src]="'assets/' + project.video + '.webm'"><!-- type="video/mp4"  -->
+            <img [alt]="project.name" [src]="'assets/' + project.id + '.png'">
         </video>
     </div>
 </div>

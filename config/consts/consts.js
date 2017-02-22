@@ -1,5 +1,7 @@
 // REMEMBER TO RUN npm start AGAIN AFTER MODIFYING THIS FILE // TODO add watcher so webpack takes care of this
+let baseUrl = 'http://rhinojosa.com';
 let obj = {
+    baseUrl: baseUrl,
     tabs: [
         {
             name: 'home',
@@ -26,25 +28,25 @@ let obj = {
         {
             id: 'ng-invaders',
             name: 'Space Invaders',
-            url: 'http://angularguy.net/ng-invaders',
+            url: `${baseUrl}/ng-invaders`,
             video: 'ng-invaders.m4v',
         },
         {
             id: 'angulatris',
             name: 'Tetris',
-            url: 'http://angularguy.net/angulatris',
+            url: `${baseUrl}/angulatris`,
             video: 'angulatris.m4v',
         },
         {
             id: 'solitaire',
             name: 'Solitaire',
-            url: 'http://angularguy.net/solitaire',
+            url: `${baseUrl}/solitaire`,
             video: 'solitaire.m4v',
         },
         {
             id: 'minesweeper',
             name: 'Minesweeper',
-            url: 'http://angularguy.net/minesweeper',
+            url: `${baseUrl}/minesweeper`,
             video: 'minesweeper.m4v',
         },
     ],

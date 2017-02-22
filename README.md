@@ -2,7 +2,7 @@
 
 My personal Website coded in Ng2
 
-Demo: http://angularguy.net/
+Demo: http://rhinojosa.com
 
 ## To start developing
 After cloning the repo cd to the project folder and run:
