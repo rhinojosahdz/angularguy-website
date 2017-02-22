@@ -9,6 +9,7 @@ import { HeaderComponent } from './header.component';
 import { HomeComponent } from './home.component';
 import { ModelService } from './model.service';
 import { ResumeComponent } from './resume.component';
+import { SideHeaderComponent } from './side-header.component';
 import { TechnologiesComponent } from './technologies.component';
 
 @NgModule({
@@ -23,6 +24,7 @@ import { TechnologiesComponent } from './technologies.component';
     TechnologiesComponent,
     ResumeComponent,
     ContactComponent,
+    SideHeaderComponent,
   ],
   imports: [
     BrowserModule,

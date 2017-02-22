@@ -8,7 +8,7 @@ import { ModelService } from './model.service';
 })
 export class HamburgerButtonComponent {
     constructor(
-        modelService: ModelService,
+        public modelService: ModelService,
     ) {
     }
 }

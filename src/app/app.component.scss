@@ -28,4 +28,15 @@ body {
     &capitalize {
         text-transform: capitalize;
     }
+    &tab-header {
+        // color: $fontColor;
+        padding: 10px;
+        border: 1px solid $fontColor;
+        color: $fontColor;
+        text-decoration: none;
+        &.active {
+            color: $bodyBackgroundColor;
+            background-color: $fontColor;
+        }
+    }
 }

@@ -10,7 +10,7 @@ import { ModelService } from './model.service';
 export class AppComponent {
     public x: string;
     constructor(
-        modelService: ModelService,
+        public modelService: ModelService,
     ) {
         this.x = 'hello';
     }
