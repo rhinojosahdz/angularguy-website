@@ -1,6 +1,7 @@
 <div id="bob-technologies">
-    <div class="bob-technology" *ngFor="let technology of modelService.CONSTS.technologies">
-        <div class="bob-name">{{technology.name}}</div>
+    <input class="bob-search-box" placeholder="filter..." [(ngModel)]="searchText">
+    <div class="bob-technology" *ngFor="let technology of modelService.CONSTS.technologies | like : 'name' : searchText">
+        <div class="bob-name"><h3>{{technology.name}}</h3></div>
         <div class="bob-stars">
             <div class="bob-star" *ngFor="let star of stars; let i = index;" [ngClass]="{'bob-fill' : technology.stars > i}">
             </div>

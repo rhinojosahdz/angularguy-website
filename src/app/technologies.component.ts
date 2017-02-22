@@ -8,6 +8,7 @@ import { ModelService } from './model.service';
 })
 export class TechnologiesComponent {
     public stars = [{}, {}, {}, {}, {}];
+    public searchText: string = '';
     constructor(
         public modelService: ModelService,
     ) {

@@ -4,7 +4,7 @@ $headerSwapButtons: 394px;
 $sideHeaderWidth: 150px;
 $projectSize: 300px;
 $starFillColor: #DDB846;
-$starVoidColor: white;
+$starVoidColor: $bodyBackgroundColor;
 @mixin prefix($declarations, $prefixes: ()) {
     @each $property,
     $value in $declarations {
