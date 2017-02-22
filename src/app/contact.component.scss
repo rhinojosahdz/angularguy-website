@@ -1,6 +1,12 @@
 @import "consts";
 #bob-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    div {
+        margin-bottom: 40px;
+    }
 }
 
-.bob- {
-}
+.bob- {}

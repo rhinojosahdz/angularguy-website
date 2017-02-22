@@ -1,8 +1,9 @@
 @import "consts";
 #bob-projects {
-    @include prefix((transition: all .3s ease), webkit moz ms);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     &.bob- {}
 }
 
@@ -10,5 +11,13 @@
     &project {
         width: $projectSize;
         // height: $projectSize;
+        .bob-name {
+            margin-top: 25px;
+        }
+        .bob-url {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
     }
 }

@@ -1,5 +1,5 @@
 <div id="bob-technologies">
-    <input class="bob-search-box" placeholder="filter..." [(ngModel)]="searchText">
+    <input class="bob-search-box" placeholder="Search..." [(ngModel)]="searchText">
     <div class="bob-technology" *ngFor="let technology of modelService.CONSTS.technologies | like : 'name' : searchText">
         <div class="bob-name"><h3>{{technology.name}}</h3></div>
         <div class="bob-stars">

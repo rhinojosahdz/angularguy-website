@@ -10,10 +10,14 @@
 .bob- {
     &titles {
         .bob-first { // TODO how to access & grand-parent (.bob-)
-            width: 300px;
+            // width: 300px;
+            margin-bottom: 10px;
+            margin: 0 35px;
         }
         .bob-second {
-            width: 300px;
+            // width: 300px;
+            margin-bottom: 10px;
+            margin: 35px;
         }
     }
 }

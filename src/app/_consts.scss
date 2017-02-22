@@ -1,10 +1,23 @@
 $bodyBackgroundColor: black;
 $fontColor: white;
-$headerSwapButtons: 394px;
+$headerSwapButtons: 400px;
 $sideHeaderWidth: 150px;
-$projectSize: 300px;
-$starFillColor: #DDB846;
-$starVoidColor: $bodyBackgroundColor;
+$projectSize: 310px; // iphone 4s is 320 x 480, this should be fine, also all videos width's are less than 310
+$starFillColor: #DDB846; // gold
+$starVoidColor: lightgray;
+$anchorColor: #0000EE;
+$anchorVisitedColor: $anchorColor;
+$tabSelectedColor: $bodyBackgroundColor;
+$tabSelectedBackgroundColor: $fontColor;
+// palette
+$bodyBackgroundColor: #191919;
+$fontColor: #DFE2DB;
+$starVoidColor: #DFE2DB;
+$anchorColor: #FFF056;
+$anchorVisitedColor: $anchorColor;
+$tabSelectedColor: $bodyBackgroundColor;
+$tabSelectedBackgroundColor: #FFF056;
+// ends palette
 @mixin prefix($declarations, $prefixes: ()) {
     @each $property,
     $value in $declarations {

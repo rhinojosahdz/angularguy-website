@@ -2,6 +2,7 @@
 body {
     background-color: $bodyBackgroundColor;
     color: $fontColor;
+    font-family: Century Gothic, sans-serif;
 }
 
 *,
@@ -18,6 +19,13 @@ body {
     position: absolute;
 }
 
+a {
+    color: $anchorColor;
+    &:visited {
+        color: $anchorVisitedColor;
+    }
+}
+
 .bob- {
     &uppercase {
         text-transform: uppercase;
@@ -30,9 +38,17 @@ body {
         border: 1px solid $fontColor;
         color: $fontColor;
         text-decoration: none;
+        background-color: $bodyBackgroundColor;
         &.active {
-            color: $bodyBackgroundColor;
-            background-color: $fontColor;
+            color: $tabSelectedColor;
+            background-color: $tabSelectedBackgroundColor;
+            border: 1px solid $tabSelectedBackgroundColor;
+            &:visited {
+                color: $tabSelectedColor;
+            }
+        }
+        &:visited {
+            color: $fontColor;
         }
     }
 }

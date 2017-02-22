@@ -6,12 +6,11 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    background-color: gray;
+    // background-color: gray;
     width: $sideHeaderWidth;
     &.bob- {
         &hide {
             left: -$sideHeaderWidth;
-            color: blue;
         }
     }
 }
