@@ -40,7 +40,7 @@ import { TechnologiesComponent } from './technologies.component';
       { component: ResumeComponent, path: 'resume' },
       { component: TechnologiesComponent, path: 'technologies' },
       { component: ContactComponent, path: 'contact' },
-    ]),
+    ], { useHash: true }),
   ],
   providers: [
     ModelService,
