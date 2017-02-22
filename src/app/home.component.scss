@@ -8,11 +8,12 @@
 }
 
 .bob- {
-    &first-title {
-        width: 300px;
-    }
-
-    &second-title {
-        width: 200px;
+    &titles {
+        .bob-first { // TODO how to access & grand-parent (.bob-)
+            width: 300px;
+        }
+        .bob-second {
+            width: 300px;
+        }
     }
 }
