@@ -2,10 +2,10 @@
     <div *ngFor="let project of modelService.CONSTS.projects" (click)="goTo(project)" class="bob-project">
         <div class="bob-name">{{project.name}}</div>
         <a [href]="project.url" class="bob-url" target="_blank">{{project.url}}</a>
-        <video autoplay="autoplay" loop="loop"> <!-- [width]="modelService.CONSTS.video.width" [height]="modelService.CONSTS.video.height" -->
-            <source [src]="'assets/' + project.id + '.m4v'"><!-- type="video/mp4"  -->
-            <source [src]="'assets/' + project.video + '.webm'"><!-- type="video/mp4"  -->
-            <img [alt]="project.name" [src]="'assets/' + project.id + '.png'">
+        <video controls [poster]="'assets/' + project.id + '.png'"><!-- autoplay="autoplay" loop="loop" -->
+            <source [src]="'assets/' + project.id + '.m4v'" type="video/mp4">
+            <source [src]="'assets/' + project.id + '.webm'" type="video/webm">
+            <img [width]="modelService.CONSTS.video.width" [alt]="project.name" [src]="'assets/' + project.id + '.png'">
         </video>
     </div>
 </div>
