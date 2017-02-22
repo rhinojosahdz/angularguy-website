@@ -1,6 +1,74 @@
 @import "consts";
 #bob-technologies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .bob- {
+    &stars {
+        display: flex;
+    }
+    &technology {
+        margin-bottom: 25px;
+        .bob-name {
+            text-align: center;
+        }
+    }
+}
+
+// create a star using css
+.bob- {
+    $m: .2;
+    &star {
+        margin: 50px*$m 0;
+        position: relative;
+        display: block;
+        color: $starVoidColor;
+        width: 0px;
+        height: 0px;
+        border-right: 100px*$m solid transparent;
+        border-bottom: 70px*$m solid $starVoidColor;
+        border-left: 100px*$m solid transparent;
+        @include prefix((transform: rotate(35deg)), webkit moz ms o);
+    }
+    &star.bob-fill {
+        color: $starFillColor;
+        border-bottom: 70px*$m solid $starFillColor;
+    }
+    &star:before {
+        border-bottom: 80px*$m solid $starVoidColor;
+        border-left: 30px*$m solid transparent;
+        border-right: 30px*$m solid transparent;
+        position: absolute;
+        height: 0;
+        width: 0;
+        top: -45px*$m;
+        left: -65px*$m;
+        display: block;
+        content: '';
+        @include prefix((transform: rotate(-35deg)), webkit moz ms o);
+    }
+    &star.bob-fill:before {
+        border-bottom: 80px*$m solid $starFillColor;
+    }
+    &star:after {
+        position: absolute;
+        display: block;
+        color: $starVoidColor;
+        top: 3px*$m;
+        left: -105px*$m;
+        width: 0px*$m;
+        height: 0px*$m;
+        border-right: 100px*$m solid transparent;
+        border-bottom: 70px*$m solid $starVoidColor;
+        border-left: 100px*$m solid transparent;
+        @include prefix((transform: rotate(-70deg)), webkit moz ms o);
+        content: '';
+    }
+    &star.bob-fill:after {
+        color: $starFillColor;
+        border-bottom: 70px*$m solid $starFillColor;
+    }
 }

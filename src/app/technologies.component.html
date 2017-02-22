@@ -1,3 +1,9 @@
-<div id="bob-about">
-    TODO technologies
+<div id="bob-technologies">
+    <div class="bob-technology" *ngFor="let technology of modelService.CONSTS.technologies">
+        <div class="bob-name">{{technology.name}}</div>
+        <div class="bob-stars">
+            <div class="bob-star" *ngFor="let star of stars; let i = index;" [ngClass]="{'bob-fill' : technology.stars > i}">
+            </div>
+        </div>
+    </div>
 </div>

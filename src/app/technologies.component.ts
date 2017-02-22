@@ -7,8 +7,9 @@ import { ModelService } from './model.service';
     templateUrl: 'technologies.component.html',
 })
 export class TechnologiesComponent {
+    public stars = [{}, {}, {}, {}, {}];
     constructor(
-        modelService: ModelService,
+        public modelService: ModelService,
     ) {
     }
 }
