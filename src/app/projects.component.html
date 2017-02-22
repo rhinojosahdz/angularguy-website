@@ -1,0 +1,10 @@
+<div id="bob-project">
+    <div *ngFor="let project of modelService.CONSTS.projects" (click)="goTo(project)" class="bob-project">
+        <div>{{project.name}}</div>
+        <div>{{project.url}}</div>
+        <video autoplay="autoplay" loop="loop"> <!-- [width]="modelService.CONSTS.video.width" [height]="modelService.CONSTS.video.height" -->
+            <source [src]="'assets/' + project.video" type="video/mp4" />
+            <!--<img src="video.gif" width="400" height="300" />-->
+        </video>
+    </div>
+</div>

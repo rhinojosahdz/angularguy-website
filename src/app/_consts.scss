@@ -2,6 +2,7 @@ $bodyBackgroundColor: black;
 $fontColor: white;
 $headerSwapButtons: 394px;
 $sideHeaderWidth: 150px;
+$projectSize: 300px;
 @mixin prefix($declarations, $prefixes: ()) {
     @each $property,
     $value in $declarations {

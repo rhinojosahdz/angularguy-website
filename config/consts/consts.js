@@ -21,6 +21,36 @@ let obj = {
             routerLinkActiveOptions: { exact: true },
             routerLink: 'contact'
         },
-    ]
+    ],
+    projects: [
+        {
+            id: 'ng-invaders',
+            name: 'Space Invaders',
+            url: 'http://angularguy.net/ng-invaders',
+            video: 'ng-invaders.m4v',
+        },
+        {
+            id: 'angulatris',
+            name: 'Tetris',
+            url: 'http://angularguy.net/angulatris',
+            video: 'angulatris.m4v',
+        },
+        {
+            id: 'solitaire',
+            name: 'Solitaire',
+            url: 'http://angularguy.net/solitaire',
+            video: 'solitaire.m4v',
+        },
+        {
+            id: 'minesweeper',
+            name: 'Minesweeper',
+            url: 'http://angularguy.net/minesweeper',
+            video: 'minesweeper.m4v',
+        },
+    ],
+    video: {
+        width: 300,
+        height: 420,
+    }
 };
 module.exports = obj;

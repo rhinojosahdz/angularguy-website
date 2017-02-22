@@ -1,0 +1,14 @@
+@import "consts";
+#bob-projects {
+    @include prefix((transition: all .3s ease), webkit moz ms);
+    display: flex;
+    flex-direction: column;
+    &.bob- {}
+}
+
+.bob- {
+    &project {
+        width: $projectSize;
+        // height: $projectSize;
+    }
+}

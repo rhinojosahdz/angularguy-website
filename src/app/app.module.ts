@@ -8,6 +8,7 @@ import { HamburgerButtonComponent } from './hamburger-button.component';
 import { HeaderComponent } from './header.component';
 import { HomeComponent } from './home.component';
 import { ModelService } from './model.service';
+import { ProjectsComponent } from './projects.component';
 import { ResumeComponent } from './resume.component';
 import { SideHeaderComponent } from './side-header.component';
 import { TechnologiesComponent } from './technologies.component';
@@ -25,6 +26,7 @@ import { TechnologiesComponent } from './technologies.component';
     ResumeComponent,
     ContactComponent,
     SideHeaderComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,
