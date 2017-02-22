@@ -12,7 +12,7 @@
         ],
         "arrow-parens": [
             false
-        ]
+        ],
         // "no-string-literal": false,
         // "object-literal-sort-keys": false,
         // "whitespace": [
@@ -32,7 +32,7 @@
         //     false
         // ],
         // "no-empty": false,
-        // "no-unused-expression": false,
+        "no-unused-expression": false
         // "no-shadowed-variable": false
     }
 }
