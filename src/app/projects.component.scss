@@ -9,20 +9,20 @@
 
 .bob- {
     &project {
+        display: flex;
+        flex-direction: column;
         .bob-video,
         .bob-img-fail {
-            display: block;
             width: $projectSize;
             padding: 0px 10px;
         }
-        // height: $projectSize;
         .bob-name {
-            margin-top: 25px;
+            margin-top: 50px;
         }
-        .bob-url {
-            margin-top: 10px;
-            margin-bottom: 20px;
-            display: inline-block;
+        .bob-name,
+        .bob-url,
+        .bob-app-store {
+            margin-bottom: 15px;
         }
     }
 }

@@ -26,16 +26,17 @@ let obj = {
     ],
     projects: [
         {
+            id: 'angulatris',
+            name: 'Tetris',
+            url: `${baseUrl}/angulatris`,
+            appStore: 'https://play.google.com/store/apps/details?id=net.angularguy.tetris',
+            video: 'angulatris.m4v',
+        },
+        {
             id: 'ng-invaders',
             name: 'Space Invaders',
             url: `${baseUrl}/ng-invaders`,
             video: 'ng-invaders.m4v',
-        },
-        {
-            id: 'angulatris',
-            name: 'Tetris',
-            url: `${baseUrl}/angulatris`,
-            video: 'angulatris.m4v',
         },
         {
             id: 'solitaire',
