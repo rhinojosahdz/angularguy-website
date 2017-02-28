@@ -1,6 +1,7 @@
 <div id="bob-projects">
     <div *ngFor="let project of modelService.CONSTS.projects" class="bob-project">
         <div class="bob-name">{{project.name}}</div>
+        <div class="bob-technologies">{{project.technologies}}</div>
         <a *ngIf="project.appStore" [href]="project.appStore" class="bob-app-store" target="_blank">Android App</a>        
         <a [href]="project.url" class="bob-url" target="_blank">{{project.url}}</a>
         <!-- autoplay="autoplay" loop="loop" -->
